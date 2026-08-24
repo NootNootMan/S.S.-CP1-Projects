@@ -1,3 +1,4 @@
+#Surabya Satyal, Fixing code
 name = "Alex"
 age = 16
 #Fixed nam to name
