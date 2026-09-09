@@ -36,9 +36,9 @@ while True:
         print("Thats not a valid GPA, try again")
     else:
         break      
-
+full_name = first_name.title() + " " + last_name.title()
 string_phone = str(phone_number)
 #PRINT
-print(f"Name: {first_name + last_name}")
+print(f"Name: {full_name}")
 print(f"Phone: {string_phone[0: 3]} {string_phone[3: 6]} {string_phone[6: 10]}")
 print(f"GPA: {round(gpa, 1)}")
