@@ -1,3 +1,4 @@
+#Surabya Satyal Dice roller
 import random
 dice_number = input("Hello, Which  size of dice would you like to roll?(D4, D6, D8, D10, D12, D20)")
 
