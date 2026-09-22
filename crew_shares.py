@@ -17,7 +17,9 @@ while True:
 
 treasure_got = random.randint(500,5000)
 print("They have "+str(treasure_got)+" units from the treasure.")
-pirates_away = (pirates_number) - 2
+
+pirates_away = (pirate_number) - 2
+
 money_units = treasure_got -int(pirate_away)*3
 print("As Yondo and Quill gave 3 units to each member, there total treasure is now "+str(money_units)+".")
 
@@ -32,10 +34,10 @@ remaining_treasure = money_units - thief_yondo - thief_quill
 print("The day of splitting has arrived!!!")
 money_for_all = round(((remaining_treasure) / int(pirate_number)) , 2)
 
-print("Everyone in the crew got "+(money_for_all)+" units.")
+print("Everyone in the crew got "+str(money_for_all)+" units.")
 
 real_yondo = (money_for_all) + (thief_yondo)
 print("Yondo got "+str(real_yondo)+ "units.")
 
 real_quill = (money_for_all) + (thief_quill)
-print("Quill got "+str(real_quill)+ "units.")
+print("Quill got "+str(real_quill)+ " units.")
