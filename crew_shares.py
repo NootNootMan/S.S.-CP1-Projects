@@ -11,7 +11,7 @@ while True:
     except ValueError:
         print("Invalid input.")
 
-print("So, in total you have "+pirate_number+" pirates")
+print("So, in total you have " +pirate_number+ " pirates")
 
 print("Yondu Udonta and his crew arrive at the Iron Lotus after several weeks of plundering various places around the galaxy. The crew has been in space for nearly six months and they are ready for a night of celebration. Yondu doesn't want to divvy up the plunder just yet, so he gives each crew member other than himself and Peter Quill 3 units and sends them off to the Iron Lotus. After the crew has gone, he and Peter count what's left and decide how to split it up among the crew. Yondu takes 13% of the total. He then gives Peter 11% of what's left. The next morning, Yondu divides the remaining amount evenly among all of the crew, including Yondu and Quill. The crew does not know that Yondu and Quill have already taken a cut.")
 
@@ -37,7 +37,7 @@ money_for_all = round(((remaining_treasure) / int(pirate_number)) , 2)
 print("Everyone in the crew got "+str(money_for_all)+" units.")
 
 real_yondo = (money_for_all) + (thief_yondo)
-print("Yondo got "+str(real_yondo)+ "units.")
+print("Yondo got "+str(real_yondo)+ " units.")
 
 real_quill = (money_for_all) + (thief_quill)
 print("Quill got "+str(real_quill)+ " units.")
