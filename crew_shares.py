@@ -33,3 +33,9 @@ print("The day of splitting has arrived!!!")
 money_for_all = round(((remaining_treasure) / (pirate_number)) , 2)
 
 print("Everyone in the crew got "+(money_for_all)+" units.")
+
+real_yondo = (money_for_all) + (thief_yondo)
+print("Yondo got "+real_yondo+ "units.")
+
+real_quill = (money_for_all) + (thief_quill)
+print("Quill got "+real_quill+ "units.")
