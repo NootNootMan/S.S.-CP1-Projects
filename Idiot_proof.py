@@ -42,3 +42,4 @@ string_phone = str(phone_number)
 print(f"Name: {full_name}")
 print(f"Phone: {string_phone[0: 3]} {string_phone[3: 6]} {string_phone[6: 10]}")
 print(f"GPA: {round(gpa, 1)}")
+
