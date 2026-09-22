@@ -27,12 +27,12 @@ print(f"As Yondo and Quill gave 3 units to each away member, the total treasure 
 thief_yondo = (13 / 100) * money_units
 print(f"Now as the team was gone for the night, Yondu came and took 13% of the treasure which was a whopping {thief_yondo:.2f} Units.")
 
-thief_quill = (11 / 100) * (money_units - thief_yondu)
+thief_quill = (11 / 100) * (money_units - thief_yondo)
 print(f"Now as the team was gone for the night, Quill also came and took 11% of the treasure which was a whopping {thief_quill:.2f} Units.")
 
 remaining_treasure = money_units - thief_yondo - thief_quill
 print("The day of splitting has arrived!!!")
-money_for_all = round((remaining_treasure) / int(pirate_number))
+money_for_all = round((remaining_treasure) / int(pirate_number),2)
 
 print(f"Each regular crew member got: {money_for_all:.2f} units.")
 
