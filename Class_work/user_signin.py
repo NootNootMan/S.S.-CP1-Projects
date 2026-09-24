@@ -4,7 +4,7 @@ username = input("Write the username: ")
 password = input("Enter the password: ")
 
 if username == ('Istealch33se'):
-    print("Username inputeted")
+    print("Correct username")
 else:
-    print("")
+    print("Incorrect username")
     
