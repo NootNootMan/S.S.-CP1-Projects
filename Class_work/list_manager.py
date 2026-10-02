@@ -29,8 +29,3 @@ while True:
         
     else:
         print("Invalid option, please choose add, remove, view, or exit.")
-
-    
-   
-    
-  
