@@ -28,4 +28,4 @@ while True:
         break
         
     else:
-        print("Invalid option, please choose add, remove, view, or exit.")
+        print("That is not an option, please choose add, remove, view, or exit.")
