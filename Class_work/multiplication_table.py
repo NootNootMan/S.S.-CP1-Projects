@@ -1,5 +1,9 @@
 #Surabya Satyal Multiplication table
-for row in range(1,16):
-    for collum in range(1,16):
+import time
+
+for row in range(1,13):
+    for collum in range(1,13):
         answer = (row*collum)
-        print(answer)
+        print(f"{answer:>4}",end = '')
+    print('\n')       
+    time.sleep(0.25)
