@@ -1,18 +1,22 @@
-# Surabya Satyal Factorial Period-1
-import math
-numbers = []
-factor_number = []
+# Surabya Satyal Factorial Period-1 
+import math # Importing math
+numbers = [] # Empty list
+
 while True:
     user_input = input("What number do you want the factorial of: ")
     try:
         factor_user = int(user_input)
-    except:
+    except ValueError:
         print("That is not a number.")
     else:
-        if 0 <= factor_user:
+        if factor_user >= 0:
             break
         else:
-            print("Thats a negetive number.")
-numbers.append(factor_user)
-factor_number.append(list(map(math.factorial,numbers)))
-print(*factor_number)
+            print("That is a negative number.")
+
+numbers.append(factor_user) # Store the user input.
+
+factor_results = list(map(math.factorial, numbers))# Use map and then convert into list.
+
+for i in range(len(numbers)): # Using index to print the correct output. 
+    print(f"{numbers[i]}! = {factor_results[i]}")
