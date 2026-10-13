@@ -16,7 +16,7 @@ while True:
                 tries += 1
                 print(f"You have used {tries} of your 3 tries. Be careful")
         elif tries == 2:
-                print("Incorrect! Hint: It's a shooting game where you can build stuff and a food made from squising potatoes and it is all singular not plural.First letter is capital.")
+                print("Incorrect! Hint: It's a shooting game where you can build stuff (You can crank 90's) and a food made from squising potatoes and it is all singular not plural.First letter is capital.")
                 tries += 1
                 print(f"You have used {tries} of your 3 tries. Be careful")
         else:
