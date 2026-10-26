@@ -17,7 +17,7 @@ for round_num in range(1, rounds + 1):
         guess = int(input("Guess a number between 1 and 20: "))
         guesses = guesses + 1
 
-        if guess == secret_number: #Missing the : .Syntax error. Without the : nothing will happen if you guess or dont guess the code.
+        if guess == secret_number: # Missing the : .Syntax error. Without the : nothing will happen if you guess or dont guess the code.
             print(f"Correct! It took you {guesses} guesses.")
             found = True
         elif guess < secret_number:
@@ -32,15 +32,13 @@ print("Your guesses per round: ",scores) # Was concatinating a list. Syntax erro
 
 total = 0
 for score in scores:
-    total = 0
+                            # Total = 0 was inside loop. Logic error. The loop resets the total to 0 every time.
     total = total + score
 
 average = total / rounds
 print("Your average guesses per round was " + str(average))
 
-best_round = scores[0]
-for i in range(1, rounds - 1):
-    if scores[i] < best_round:
-        best_round = scores[i]
+best_round = min(scores) # There was a -1. Logic error. There was a -1 before rounds making it ignore the last score.
+
 
 print(f"Your best round took only {best_round} guesses!")
