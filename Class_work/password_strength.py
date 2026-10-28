@@ -3,6 +3,8 @@
 points = 0
 print("Welcome to the password checker.")
 password = input("Write your password here: ") 
+while password == "":
+    password = input("That was not a valid input. Try again: ")
 
 character = list(password) 
 if any(char.islower() for char in character):
@@ -24,11 +26,11 @@ if any(char in special_characters for char in character):
 
 if points <= 2:
     print("Your password is weak.")
-if points ==3:
+elif points <= 3:
     print("Your password is moderate.")
-if points == 4:
+elif points <= 4:
     print("Your password is strong.")
-if points == 5:
+elif points <= 5:
     print("Your password is very strong.")
 
 
