@@ -5,15 +5,12 @@ def cipher(message, shift_value, option):
         shift_value = -shift_value
 
     result = []
-    
-    
     for char in message:
         if char.isalpha():
             start = 65 if char.isupper() else 97
             new_char = chr((ord(char) - start + shift_value) % 26 + start)
             result.append(new_char)
         else:
-            
             result.append(char)
 
     return "".join(result)
@@ -27,17 +24,16 @@ def question():
     actual_message = input("Enter the code: ")
     
     try:
-        user_input = input("By how much do you want to shift: ")
-        shift_value = int(user_input)
+        shift_value = int(input("By how much do you want to shift: "))
     except ValueError:
-        print(f"Choose a number.")
+        print("Choose a number.")
         return
     
-    if choice == '1':
-        encoded = cipher(actual_message, shift_value, 'encode')
-        print(f"Encoded message: {encoded}")
-    else:
-        decoded = cipher(actual_message, shift_value, 'decode')
-        print(f"Decoded message: {decoded}")
+    
+    option = 'encode' if choice == '1' else 'decode'
+    processed_message = cipher(actual_message, shift_value, option)
+    
+    print(f"{option.capitalize()}d message: {processed_message}")
 
 question()
+
