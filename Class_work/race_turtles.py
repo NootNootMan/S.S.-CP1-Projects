@@ -19,6 +19,14 @@ green_turtle.shape('turtle')
 green_turtle.penup()
 green_turtle.forward(-300)
 
+purple_turtle = t.Turtle()
+purple_turtle.color('purple')
+purple_turtle.shape('turtle')
+purple_turtle.penup()
+purple_turtle.goto(0,-500)
+purple_turtle.forward(-300)
+
+
 red_turtle = t.Turtle()
 red_turtle.color('red')
 red_turtle.shape('turtle')
@@ -48,11 +56,14 @@ blue_speed = random.randint(1,5)
 blue_turtle.speed = blue_speed
 orange_speed = random.randint(1,5)
 orange_turtle.speed = orange_speed
+purple_speed = random.randint(1,5)
+purple_turtle.speed = purple_speed
 
 green_turtle.pendown()
 red_turtle.pendown()
 blue_turtle.pendown()
 orange_turtle.pendown()
+purple_turtle.pendown()
 
 
 while True: #The Steps system
@@ -60,6 +71,7 @@ while True: #The Steps system
     red_turtle.forward(red_speed)
     green_turtle.forward(green_speed)
     orange_turtle.forward(orange_speed)
+    purple_turtle.forward(purple_speed)
 
 #Checks who won
     if green_turtle.xcor() >= 500:
@@ -73,6 +85,9 @@ while True: #The Steps system
         break
     elif orange_turtle.xcor() >= 500:
         print("Orange wins")
+        break
+    elif purple_turtle.xcor() >= 500:
+        print("Purple wins")
         break
     
 
