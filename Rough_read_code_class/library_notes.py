@@ -14,7 +14,8 @@ while radius > 0:
     t.forward(5)  # Move inside to the next starting point
     t.down()
     t.right(90)
-    radius -= 5
+    radius += 5
+    t.hideturtle()
     t.shape("turtle")
 
 t.done()
