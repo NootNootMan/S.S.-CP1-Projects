@@ -10,11 +10,11 @@ menu = {
         "Hamburger": 4,
         "Filet-O-Fish": 5,
         "Mc Chicken": 3,
-        "Chicken McNuggets(10)": 6,
+        "Chicken Mcnuggets(10)": 6,
     },
     "Side": {
-        "Pizza McShaker Fries": 3,
-        "McDonald's Fries": 3,
+        "Pizza Mcshaker Fries": 3,
+        "Mcdonalds Fries": 3,
         "Apple Slices": 2,
         "Reindeer Treats": 2,
     },
@@ -64,17 +64,21 @@ print(f"Drink: {drink_choice}")
 print(f"Total: ${reciept}")
 
 while True:
-    tip = input("Please give us the tip: ")
+    try:
+        tip = int(input("Please give us the tip: "))
+    except ValueError:
+        break
+
     if tip <= 0:
         print("What the heck")
-    elif tip > 0:
-        print("Thank you for helping the poor.")
+        break
     elif tip > 100:
         print("You the Mr. Beast.")
-    else:
+        break
+    elif tip > 0:
+        print("Thank you for helping the poor.")
         break
     
-
 
 
 
