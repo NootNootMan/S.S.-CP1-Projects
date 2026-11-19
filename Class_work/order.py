@@ -13,8 +13,8 @@ menu = {
         "Chicken Mcnuggets(10)": 6,
     },
     "Side": {
-        "Pizza McShaker Fries": 3,
-        "McDonald's Fries": 3,
+        "Pizza Mcshaker Fries": 3,
+        "Mcdonald's Fries": 3,
         "Apple Slices": 2,
         "Reindeer Treats": 2,
     },
