@@ -10,7 +10,7 @@ menu = {
         "Hamburger": 4,
         "Filet-O-Fish": 5,
         "Mc Chicken": 3,
-        "Chicken McNuggets(10)": 6,
+        "Chicken Mcnuggets(10)": 6,
     },
     "Side": {
         "Pizza McShaker Fries": 3,
@@ -74,7 +74,6 @@ while True:
     else:
         break
     
-
 
 
 
