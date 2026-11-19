@@ -14,7 +14,7 @@ menu = {
     },
     "Side": {
         "Pizza Mcshaker Fries": 3,
-        "Mcdonald's Fries": 3,
+        "Mcdonalds Fries": 3,
         "Apple Slices": 2,
         "Reindeer Treats": 2,
     },
