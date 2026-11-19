@@ -64,14 +64,19 @@ print(f"Drink: {drink_choice}")
 print(f"Total: ${reciept}")
 
 while True:
-    tip = input("Please give us the tip: ")
+    try:
+        tip = int(input("Please give us the tip: "))
+    except ValueError:
+        break
+
     if tip <= 0:
         print("What the heck")
-    elif tip > 0:
-        print("Thank you for helping the poor.")
+        break
     elif tip > 100:
         print("You the Mr. Beast.")
-    else:
+        break
+    elif tip > 0:
+        print("Thank you for helping the poor.")
         break
     
 
