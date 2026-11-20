@@ -42,5 +42,5 @@ hello("Yamir", "The Goat")
         return f"{data}"""
     
 
-print(clean(type = "float",data = "3.1415", decimals = 3))
-print(clean(data = "utah", type = "str"))
+'''print(clean(type = "float",data = "3.1415", decimals = 3))
+print(clean(data = "utah", type = "str"))'''
