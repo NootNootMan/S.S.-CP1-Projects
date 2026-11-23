@@ -9,7 +9,6 @@ def type_of_question(prompt, *question_types):
         print("The input wasn't correct. Please spell correctly.")
 
 def actual_number():
-    print("Enter numbers (type 'done' when finished)")
     numbers = []
     while True:
         user_message = input("Type the number you want to calculate: ").strip().lower()
@@ -22,6 +21,7 @@ def actual_number():
             print("Invalid input")
     return numbers
     
+#For the operation
 def calculator(operation, *numbers):
     if operation == "average":
         return sum(numbers) / len(numbers)
@@ -36,6 +36,7 @@ def calculator(operation, *numbers):
     
 user_numbers = actual_number()
 
+#More stupid proofing
 if len(user_numbers) == 0:
     print("You didnt enter any numbers.")
 
