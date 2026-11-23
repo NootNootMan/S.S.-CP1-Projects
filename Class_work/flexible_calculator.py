@@ -2,26 +2,25 @@
 import math
 
 #Stupid proofing
-def type_of_question(equation, *question_type):
+def type_of_question(prompt, *question_types):
     while True:
-        choice_question = input(equation).strip().lower()
-        if choice_question in question_type:
+        choice_question = input(prompt).strip().lower()
+        if choice_question in question_types:
             return choice_question
-        else:
-            print("The input wasn't correct. Please spell correctly.")
+        print("The input wasn't correct. Please spell correctly.")
 
 def actual_number():
-    print("Enter numbers (type 'done' when finished)")
     numbers = []
     while True:
-        user_message = input("Type the number you want to calculate: ").strip().lower()
+        user_message = input("Type the number you want to calculate and write 'done' when you want to perform operation. ").strip().lower()
         if user_message == "done":
             break
+
         try:
             numbers.append(float(user_message))
         except ValueError:
             print("Invalid input")
-        return numbers
+    return numbers
     
 def calculator(operation, *numbers):
     if operation == "average":
@@ -36,14 +35,19 @@ def calculator(operation, *numbers):
         return max(numbers)
     
 user_numbers = actual_number()
-    
-choice_question = type_of_question("Which operation would you like to perform?")
 
 if len(user_numbers) == 0:
     print("You didnt enter any numbers.")
 
 else:
-    answer = calculator()
+
+    choice_question = type_of_question(
+        "Which operation would you like to perform? (average, product, sum, min, max): ",
+        "average", "product", "sum", "min", "max"
+    )
+    
+    answer = calculator(choice_question, *user_numbers)
+    print(f"{choice_question}: {answer}")
 
 
 
